@@ -2,6 +2,14 @@
 
 # scriptul va avea 2 parametrii la linia de comanda, si anume calea catre directorul unde cream directoarele,
 # precum si fisierul care va contine structura directoarelor
+
+# this script automates several comands: shebang, touch, chmod and vim. 
+if [  "$#" -ne 2 ]; then 
+	echo "this script requires one argument wich is the script name"
+exit 1 
+fi
+
+
 cale_destinatie=$1
 cale_structura_directoare=$2
 
